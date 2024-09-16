@@ -12,7 +12,7 @@ func enterNum() int {
 	fmt.Scan(&randomNum)
 	num, err := strconv.Atoi(randomNum)
 	if err != nil {
-		fmt.Println("You did not enter a numer, please enter a number")
+		fmt.Println("You did not enter a number, please enter a number")
 		num = enterNum()
 	}
 	return num
@@ -25,7 +25,7 @@ func randomNumber() {
 		num := enterNum()
 		randNum := rand.IntN(10)
 		if num > 10 {
-			fmt.Println("Number is to big, please enter a number < 10")
+			fmt.Println("Number is too big, please enter a number < 10")
 			num = enterNum()
 		}
 
@@ -34,7 +34,7 @@ func randomNumber() {
 			i++
 			continue
 		} else {
-			fmt.Printf("greate guess you won in %v guesses\n", i)
+			fmt.Printf("great guess you won in %v guesses\n", i)
 			break
 		}
 
